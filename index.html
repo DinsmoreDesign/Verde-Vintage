@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Verde Vintage & Thrift, Inc. | An antique and thrift store with an old-fashioned atmosphere.</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/57x57.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+<!-- Navbar -->
+    
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/mark-b.png" alt="Verde Vintage Logo" class="img-responsive">
+            </a>
+            <a class="navbar-brand pull-right" href="#">
+                <img src="img/mark-txt-g.png" alt="Verde Vintage Logo" class="img-responsive">
+            </a>
+        </div>
+    </nav>
+    
+<!-- Top Image -->
+    
+    <section class="callout" id="imgbg-header">
+        <div class="text-vertical-center">
+            <h1>Welcome!</h1>
+        </div>
+    </section>
+    
+<!-- Textbox -->
+    
+    <section class="greenbox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><em>Shop local. Shop</em> <strong>Verde</strong>.</h1>
+                    <hr>
+                    <p>
+                    Verde Vintage & Thrift, Inc. is a family owned and operated business in West Mesa, Arizona that strives to offer the best selection
+                    of goods at reasonable prices. We stock a wide selection of antiques, furniture, clothing, appliances and other thrift items.
+                    </p>
+                    <p>
+                    The Verde showroom will provide you with a unique shopping experience that guarantees quality goods, store integrity and a
+                    professional and courteous staff.</p>
+                    <p>
+                    Our family-owned and operated antique and thrift store has a friendly, old-fashioned atmosphere specializing in vintage, antique and
+                    interesting items of all sorts.
+                    </p>
+                    <hr>
+                    <h2>We don’t just consider you a <em>customer</em>, but part of the <u><em></em>family</u>!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Inventory -->
+    
+    <section class="clearbox" id="imgbg-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="padding-bottom: 25px">
+                    <h1>Selected inventory</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <img src="img/inventory/1.jpg" class="img-responsive bottom-pad">
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/inventory/2.jpg" class="img-responsive bottom-pad">
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/inventory/3.jpg" class="img-responsive bottom-pad">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/inventory/5.jpg" class="img-responsive bottom-pad">
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/inventory/4.jpg" class="img-responsive bottom-pad">
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/inventory/6.jpg" class="img-responsive bottom-pad">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Lightbox -->
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script>
+        $(document).ready(function(){
+            $('.clearbox img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });
+        })
+    </script>
+    
+<!-- Contact -->
+    
+    <section class="whitebox">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12 text-vertical-center bottom-pad">
+                    <h2>Visit us...</h2>
+                    <p>326 W. Southern Ave.</p>
+                    <p>Mesa, AZ 85210</p>
+                    <p><em style="color:#39a948">Fri & Sat, 10 a.m. – 6 p.m.</em></p>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-vertical-center">
+                    <img src="img/logo-v.png" class="img-responsive bottom-pad" id="bottom-logo">
+                </div>
+                <div class="col-sm-4 col-xs-12 text-vertical-center bottom-pad">
+                    <h2>Contact us...</h2>
+                    <p>(480) 464-3200</p>
+                    <p>verdevintage@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Etsy -->
+
+    <section class="greenbox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-vertical-center">
+                    <h1>Not in Arizona?</h1>
+                    <p>Visit our <a href="https://www.etsy.com/shop/VerdeVintageThrift"><strong>Etsy</strong></a> page to see our newest inventory and
+                    buy from the comfort of your home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Footer -->
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 text-left">
+                    <a href="https://www.facebook.com/verdevintagethrift"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="col-xs-6 text-left">
+                    <p>© 2015
+                    <br>
+                    Verde Vintage & Thrift, Inc.</p>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <p>Website by
+                    <br>
+                    <a href="http://dinsmore-design.com/">Dinsmore Design</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
